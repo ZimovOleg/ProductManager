@@ -9,7 +9,7 @@ import ru.netology.repository.ProductRepository;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ManagerTest {
+class ProductManagerTest {
     private ProductRepository repository = new ProductRepository();
     private ProductManager manager = new ProductManager(repository);
     Product book1 = new Book(1, "Метро 2033", 500, "Глуховский");
@@ -32,9 +32,7 @@ class ManagerTest {
         manager.add(smart2);
         manager.add(smart3);
         manager.add(smart4);
-
     }
-
 
     @Test
         // Поиск по названию книги. Книги нет
